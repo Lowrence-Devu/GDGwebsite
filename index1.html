@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDG Website</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Join Google Developer Groups (GDG) to connect, learn, and grow with developers worldwide. Explore events, workshops, and resources.">
+<meta name="keywords" content="Google Developer Groups, GDG, developers, workshops, events, technology, community">
+<meta name="author" content="GDG"> 
+ <body>
+     
+     
+    <section id="header">
+        
+    </section>
+    <header>
+        <nav>
+            <div class="logo">
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#domains">Domains</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="javascript:void(0)" onclick="openSubscriptionModal()">Subscription</a></li>
+            </ul>
+            
+            <!-- User Avatar -->
+            <div class="user-profile">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.uDtPlCTKLnrQW_ipwKsCJAHaHa&pid=Api&P=0&h=220" alt="User Avatar">
+            <div class="user-details"></div>
+            <div class="dropdown-menu" id="dropdownMenu">
+                <ul>
+                    <li><a href="account.html">Account</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    <li><a href="login.html" onclick="logout()">Logout</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <section id="hero">
+    <h2>Welcome to Google Developer Groups</h2>
+    <p>Join our community of developers and tech enthusiasts.</p>
+    <a href="#events" class="btn">Explore Events</a>
+    </section>
+     
+     
+    <section id="technologies">
+        <h2>Technologies We Focus On</h2>
+        <div class="technology-list">
+            <div class="technology">
+                <img src="https://wayspire.in/wp-content/uploads/2022/11/web-development.jpg" alt="Web Development">
+                <h3>Web Development</h3>
+            </div>
+            <div class="technology">
+                <img src="https://www.techmango.net/wp-content/uploads/2022/04/mobile-app-development.png" alt="Mobile Development">
+                <h3>Mobile Development</h3>
+            </div>
+            <div class="technology">
+                <img src="https://static.mediawire.in/pr/metadata/55620821/temp/data-security.png?id=15663?id=15663" alt="Cloud Computing">
+                <h3>Cloud Computing</h3>
+            </div>
+            <div class="technology">
+                <img src="https://www.shutterstock.com/image-illustration/aiml-stand-artificial-intelligence-machine-260nw-1574320612.jpg" alt="AI/ML">
+                <h3>AI/ML</h3>
+            </div>
+        </div>
+    </section>
+     
+    <section id="domains">
+        <h2>Domains We Cover</h2>
+        <div class="domain-list">
+            <div class="domain">
+                <img src="https://www.onlinecoursereport.com/wp-content/uploads/2020/07/shutterstock_394793860-1536x1177.jpg" alt="Web Development">
+                <h3>Web Development</h3>
+                <p>Learn and build modern web applications using the latest technologies.</p>
+                <a href="WD.html" class="btn">Learn More</a>
+            </div>
+            <div class="domain">
+                <img src="https://www.icoderzsolutions.com/blog/wp-content/uploads/2017/07/mobile-development.jpg" alt="Mobile Development">
+                <h3>Mobile Development</h3>
+                <p>Explore Android and Flutter for creating amazing mobile experiences.</p>
+                <a href="MD.html" class="btn">Learn More</a>
+            </div>
+            <div class="domain">
+                <img src="https://cdn.axalize.vn/media/content/images/cloud-computing.jpg" alt="Cloud Computing">
+                <h3>Cloud Computing</h3>
+                <p>Master Google Cloud Platform and other cloud technologies.</p>
+                <a href="cloud.html" class="btn">Learn More</a>
+            </div>
+            <div class="domain">
+                <img src="https://supplychainbeyond.com/wp-content/uploads/2017/09/what-is-machine-learning.jpg" alt="Machine Learning">
+                <h3>Machine Learning</h3>
+                <p>Dive into AI and ML with TensorFlow and other tools.</p>
+                <a href="machine.html" class="btn">Learn More</a>
+            </div>
+            <div class="domain">
+                <img src="https://yourserveradmin.com/wp-content/uploads/2020/04/uxui.jpg" alt="UI/UX Design">
+                <h3>UI/UX Design</h3>
+                <p>Design user-friendly and visually appealing interfaces.</p>
+                <a href="uiux.html" class="btn">Learn More</a>
+            </div>
+            <div class="domain">
+                <img src="https://miro.medium.com/v2/resize:fit:1200/1*f-0MUEuaILWShigxdiqkjw.jpeg" alt="Data Science">
+                <h3>Data Science</h3>
+                <p>Analyze and interpret complex data to make informed decisions.</p>
+                <a href="datascience.html" class="btn">Learn More</a>
+            </div>
+            <div class="domain">
+                <img src="https://i.ytimg.com/vi/6DB7vYXgEoo/maxresdefault.jpg" alt="Robotics">
+                <h3>Robotics</h3>
+                <p>Learn to design and build intelligent robots for various applications.</p>
+                <a href="robotics.html" class="btn">Learn More</a>
+            </div>
+            <div class="domain">
+                <img src="https://pakistanhouse.net/wp-content/uploads/2022/07/is-cybersecurity-hard-scaled-1.jpg" alt="Cybersecurity">
+                <h3>Cybersecurity</h3>
+                <p>Protect systems and networks from digital attacks and threats.</p>
+                <a href="cybersecurity.html" class="btn">Learn More</a>
+            </div>
+             
+        </div>
+    </section>
+    <!-- Subscription Modal -->
+<div id="subscriptionModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeSubscriptionModal()"></span>
+        <h2>Your Subscription</h2>
+        <div class="subscription-details">
+            <p id="subscriptionType">Subscription Type: <span>Premium</span></p>
+            <p id="subscriptionExpiry">Expiry Date: <span>2026-03-22</span></p>
+            <button class="btn" onclick="upgradeSubscription()">Upgrade Subscription</button>
+        </div>
+    </div>
+</div>
+<section id="search">
+    <h2>Search Events by Region</h2>
+    <p>Find GDG events happening in your region or anywhere in the world.</p>
+    <div class="search-container">
+        <select id="regionSelect" onchange="filterEventsByRegion()">
+            <option value="all">All Regions</option>
+            <option value="North America">North America</option>
+            <option value="South America">South America</option>
+            <option value="Europe">Europe</option>
+            <option value="Asia">Asia</option>
+            <option value="Africa">Africa</option>
+            <option value="Australia">Australia</option>
+        </select>
+    </div>
+    <div id="searchResults" class="event-list">
+        <!-- Filtered events will be displayed here -->
+    </div>
+</section>
+     
+
+<section id="events">
+    <h2>Upcoming Events</h2>
+    <p>Stay updated with the latest events and workshops hosted by GDG.</p>
+    <div id="eventContainer" class="event-list" style="display: none;">
+        <div class="event">
+            <img src="https://png.pngtree.com/background/20250103/original/pngtree-a-conceptual-illustration-of-web-design-development-and-seo-optimization-in-picture-image_13313953.jpg" alt="Web Development Workshop">
+            <h3>Web Development Workshop</h3>
+            <p><strong>Date:</strong> March 25, 2025</p>
+            <p><strong>Location:</strong> Online</p>
+            <button class="btn" onclick="openModal('Web Development Workshop')">Register Now</button>
+        </div>
+        <div class="event">
+            <img src="https://www.bennett.edu.in/wp-content/uploads/2024/10/Global-AI-Summit-25.jpg" alt="AI and Machine Learning Summit">
+            <h3>AI and Machine Learning Summit</h3>
+            <p><strong>Date:</strong> April 10, 2025</p>
+            <p><strong>Location:</strong> San Francisco, CA</p>
+            <button class="btn" onclick="openModal('AI and Machine Learning Summit')">Register Now</button>
+        </div>
+        <div class="event">
+            <img src="https://img.freepik.com/free-photo/saas-concept-collage_23-2149399281.jpg" alt="Cloud Computing Bootcamp">
+            <h3>Cloud Computing Bootcamp</h3>
+            <p><strong>Date:</strong> May 5, 2025</p>
+            <p><strong>Location:</strong> Online</p>
+            <button class="btn" onclick="openModal('Cloud Computing Bootcamp')">Register Now</button>
+        </div>
+        <div class="event">
+            <img src="https://www.shutterstock.com/image-vector/cyber-security-flyer-concepts-vector-600nw-2494499571.jpg" alt="Cybersecurity Conference">
+            <h3>Cybersecurity Conference</h3>
+            <p><strong>Date:</strong> June 15, 2025</p>
+            <p><strong>Location:</strong> New York, NY</p>
+            <button class="btn" onclick="openModal('Cybersecurity Conference')">Register Now</button>
+        </div>
+    </div>
+    <button id="viewMoreBtn" class="btn" onclick="toggleEvents()">View More</button>
+</section>
+    <!-- Registration Form Modal -->
+<div id="registrationModal" class="modal">
+    <div class="modal-content">
+         <h2>Event Registration</h2>
+        <form id="registrationForm">
+            <span class="close" onclick="closeModal()">&times;</span>
+       
+            <label for="eventName">Event Name:</label>
+            <input type="text" id="eventName" name="eventName" readonly>
+
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone">Your Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <button type="submit" class="btn">Register</button>
+        </form>
+    </div>
+</div>
+     
+
+<section id="team">
+    <h2>Meet the Team</h2>
+    <p>Our dedicated team works tirelessly to bring the best events and resources to the GDG community.</p>
+    <div class="team-list">
+        <div class="team-member">
+            <img src="https://via.placeholder.com/150" alt="Alice Johnson">
+            <h3>Alice Johnson</h3>
+            <p>Event Coordinator</p>
+        </div>
+        <div class="team-member">
+            <img src="https://via.placeholder.com/150" alt="Michael Brown">
+            <h3>Michael Brown</h3>
+            <p>Technical Lead</p>
+        </div>
+        <div class="team-member">
+            <img src="https://via.placeholder.com/150" alt="Sophia Lee">
+            <h3>Sophia Lee</h3>
+            <p>Community Manager</p>
+        </div>
+        <div class="team-member">
+            <img src="https://via.placeholder.com/150" alt="David Wilson">
+            <h3>David Wilson</h3>
+            <p>Cloud Specialist</p>
+        </div>
+        <div class="team-member">
+            <img src="https://via.placeholder.com/150" alt="James Anderson">
+            <h3>James Anderson</h3>
+            <p>AI/ML Expert</p>
+        </div>
+        
+    </div>
+</section>
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3>What is GDG?</h3>
+            <p>Google Developer Groups (GDG) are communities of developers who are interested in Google's developer technology.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How can I join GDG?</h3>
+            <p>You can join GDG by attending our events or contacting us through the "Join Now" section above.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Are GDG events free?</h3>
+            <p>Most GDG events are free to attend. Some specialized workshops may have a nominal fee.</p>
+        </div>
+    </section>
+     
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Google Developer Groups (GDG) are for developers who are interested in Google's developer technology. We aim to create a collaborative environment where developers can learn, share, and grow together.</p>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Our Mission</h3>
+                <p>To empower developers and tech enthusiasts by providing a platform to learn, connect, and innovate using Google's cutting-edge technologies.</p>
+                <h3>What We Do</h3>
+                <p>We organize workshops, hackathons, and meetups to help developers enhance their skills and stay updated with the latest trends in technology.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://timeaturdean.com/wp-content/uploads/2014/07/GDG.jpg" alt="About GDG">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>We’d love to hear from you! Feel free to reach out with any questions, feedback, or suggestions.</p>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p><strong>Email:</strong> contact@gdg.com</p>
+                <p><strong>Phone:</strong> +1 234 567 890</p>
+                <p><strong>Address:</strong> 123 Developer Lane, Tech City, USA</p>
+                <p>Follow us on:</p>
+                <div class="social-links">
+                    <a href="#" target="_blank"><img src="2.png" alt="Facebook"></a>
+                    <a href="#" target="_blank"><img src="3.png" alt="Twitter"></a>
+                    <a href="#" target="_blank"><img src="https://tse4.mm.bing.net/th?id=OIP.1R2nLh9Gdbpa75yVbtTFYgHaHY&pid=Api&P=0&h=220" alt="LinkedIn"></a>
+                    <a href="#" target="_blank"><img src="1.png" alt="Instagram"></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Send Us a Message</h3>
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Scroll-to-Top Button -->
+<div id="scrollToTop" onclick="scrollToTop()">
+    &#8679; <!-- Unicode arrow symbol -->
+</div>
+
+    <footer>
+        <p>&copy; 2025 GDG. All rights reserved.</p>
+        
+    </footer>
+    <script src="main.js"></script>
+    <script>
+        // Function to toggle the dropdown menu
+        function toggleDropdown() {
+            const dropdownMenu = document.getElementById('dropdownMenu');
+            dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+        }
+    
+        // Close the dropdown menu when clicking outside of it
+        window.addEventListener('click', function(event) {
+            const dropdownMenu = document.getElementById('dropdownMenu');
+            const userAvatar = document.getElementById('userAvatar');
+            if (event.target !== dropdownMenu && event.target !== userAvatar && !dropdownMenu.contains(event.target)) {
+                dropdownMenu.style.display = 'dropdownmenu';
+            }
+        });
+        window.addEventListener('click', function(event) {
+            const dropdownMenu = document.getElementById('dropdownMenu');
+            dropdownMenu.style.display = 'dropdownmenu';
+            const userAvatar = document.getElementById('userAvatar');
+            if (event.target !== dropdownMenu && event.target !== userAvatar && !dropdownMenu.contains(event.target)) {
+                dropdownMenu.style.display = 'dropdownmenu';
+            }
+        });
+        // Example subscription data (this can be fetched from a server in a real application)
+    const subscriptionData = {
+        username: "JohnDoe", // Example username
+        subscriptionType: "Premium",
+        expiryDate: "December 31, 2025"
+    };
+
+    // Display subscription details
+    function displaySubscriptionDetails() {
+        const username = localStorage.getItem('username');
+        if (username === subscriptionData.username) {
+            document.getElementById('subscriptionType').innerHTML = `Subscription Type: <span>${subscriptionData.subscriptionType}</span>`;
+            document.getElementById('subscriptionExpiry').innerHTML = `Expiry Date: <span>${subscriptionData.expiryDate}</span>`;
+        }
+    }
+
+    // Upgrade subscription function
+    function upgradeSubscription() {
+        alert("Upgrade feature coming soon!");
+    }
+
+    // Call the function to display subscription details
+    displaySubscriptionDetails();
+    
+        // Logout function to clear username from local storage
+        function logout() {
+            localStorage.removeItem('username');
+            window.location.href = 'login.html'; // Redirect to login page
+        }
+    
+        // Retrieve the username from local storage
+        const username = localStorage.getItem('username');
+    
+        if (username) {
+            // Display the username in the welcome message
+            document.getElementById('welcomeMessage').textContent = `Welcome, ${username}!`;
+        } else {
+            // Redirect to login page if no username is found
+            window.location.href = 'login.html';
+        }
+    
+        if (username) {
+            // Display the username next to the avatar
+            document.getElementById('usernameDisplay').textContent = username;
+    
+            // Optionally, set the avatar to display initials if no image is available
+            const avatar = document.getElementById('userAvatar');
+            avatar.alt = username;
+        }
+    </script>
+</body>
+</html>
