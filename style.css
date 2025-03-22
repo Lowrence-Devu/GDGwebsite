@@ -1469,11 +1469,11 @@ html {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 #regionSelect {
-    padding: 6rem;
+    padding: 0.8rem;
     font-size: 1rem;
     border: 2px solid #ddd;
     border-radius: 50px;
-    width: 3000px;
+    width: 600px;
     max-width: 100%;
     background: #fff;
     color: #333;
